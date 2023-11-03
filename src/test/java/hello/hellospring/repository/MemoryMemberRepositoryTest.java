@@ -21,6 +21,5 @@ class MemoryMemberRepositoryTest {
     @Test
     public void findByName() {
         Member member1 = new Member();
-
     }
 }
