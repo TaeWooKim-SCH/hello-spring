@@ -22,7 +22,18 @@ class MemberServiceTest {
 
     @Test
     void DuplicateMemberException() {
+        // given
+        Member member1 = new Member();
+        member1.setName("spring");
 
+        Member member2 = new Member();
+        member2.setName("spring");
+
+        // when
+        memberService.join(member1);
+        memberService.join(member2);
+
+        // then
     }
 
     @Test
